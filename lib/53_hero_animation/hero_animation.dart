@@ -44,7 +44,7 @@ class MyHeroAnimation extends StatelessWidget {
                   ),
                   const SizedBox(width: 16),
                   Text(
-                    'Title: ' + item.title,
+                    'Title: ${item.title}',
                     style: const TextStyle(fontSize: 24),
                   ),
                 ],

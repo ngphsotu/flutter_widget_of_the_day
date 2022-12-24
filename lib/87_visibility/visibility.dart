@@ -20,12 +20,6 @@ class _MyVisibilityState extends State<MyVisibility> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: isVisible
-                  ? Text(
-                      'Hide',
-                      style: _style,
-                    )
-                  : Text('Show', style: _style),
               onPressed: () {
                 setState(() {
                   isVisible = !isVisible;
@@ -34,6 +28,12 @@ class _MyVisibilityState extends State<MyVisibility> {
               style: ElevatedButton.styleFrom(
                 shape: const StadiumBorder(),
               ),
+              child: isVisible
+                  ? Text(
+                      'Hide',
+                      style: _style,
+                    )
+                  : Text('Show', style: _style),
             ),
             const SizedBox(height: 20),
             Visibility(

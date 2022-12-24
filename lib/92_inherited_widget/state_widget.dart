@@ -48,9 +48,11 @@ class _StateWidgetState extends State<StateWidget> {
 ///  called StateWidget given above
 ///
 class StateInheritedWidget extends InheritedWidget {
-  final int counter;
-  final Widget child;
   final _StateWidgetState stateWidget;
+  final int counter;
+  @override
+  // ignore: overridden_fields
+  final Widget child;
 
   /// state of the `StateWidget`
   const StateInheritedWidget({
